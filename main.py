@@ -3,7 +3,7 @@ def get_input_list():
     raw_input_str = input("Enter integers separated by spaces: ")
     numbers = [int(x) for x in raw_input_str.split()]
     return numbers
-    
+
     def is_prime(n):
     """Check if a single number is prime."""
     if n < 2:
@@ -17,3 +17,8 @@ def get_input_list():
 def filter_primes(numbers):
     """Return only the prime numbers from the list."""
     return [num for num in numbers if is_prime(num)]
+
+def sort_descending(numbers):
+    """Sort a list of numbers in descending order."""
+    return sorted(numbers, reverse=True)
+    
